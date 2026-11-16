@@ -1,0 +1,23 @@
+:root {
+  --color-primario: #e65100;
+  --color-primario-oscuro: #bf360c;
+  --color-secundario: #fff3e0;
+  --color-fondo: #fafafa;
+  --color-texto: #212121;
+  --color-texto-suave: #616161;
+  --color-blanco: #ffffff;
+  --sombra-card: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --radio-borde: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+}
