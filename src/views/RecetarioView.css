@@ -1,0 +1,55 @@
+.layout-principal {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-recetario {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  flex-grow: 1;
+}
+
+.encabezado-recetario {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.encabezado-recetario h2 {
+  font-size: 2rem;
+  color: var(--color-primario);
+  margin-bottom: 0.5rem;
+}
+
+.filtros-categorias {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.btn-filtro {
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-primario);
+  color: var(--color-primario);
+  padding: 0.5rem 1.1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-filtro.activo,
+.btn-filtro:hover {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+}
+
+.grid-recetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1.75rem;
+}
